@@ -2,6 +2,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import CardDetails from "./Components/CardDetails/CardDetails";
 import Books from "./Components/Paiges/Books";
 import Home from "./Components/Paiges/Home";
 import Read from "./Components/Paiges/Read";
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/read",
         element: <Read />,
+      },
+      {
+        path: "/cardDetails/:id",
+        element: <CardDetails />,
       },
     ],
   },

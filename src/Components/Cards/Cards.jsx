@@ -12,6 +12,7 @@ const Cards = () => {
       });
   }, []);
   console.log(item);
+
   return (
     <div>
       <h1 className="text-4xl font-bold text-center mt-16">Books</h1>
