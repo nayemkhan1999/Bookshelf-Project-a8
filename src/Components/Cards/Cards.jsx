@@ -11,7 +11,6 @@ const Cards = () => {
         setItem(data);
       });
   }, []);
-  console.log(item);
 
   return (
     <div>

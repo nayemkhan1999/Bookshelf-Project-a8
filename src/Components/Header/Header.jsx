@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className="lg:mx-16 md:mx-4 font-work mt-10">
@@ -9,9 +11,12 @@ const Header = () => {
               Books to freshen <br /> up your bookshelf
             </h1>
 
-            <button className="btn btn-active text-white font-semibold bg-[#23BE0A]">
+            <NavLink
+              to={"/books"}
+              className="btn btn-active text-white font-semibold bg-[#23BE0A]"
+            >
               View The List
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>

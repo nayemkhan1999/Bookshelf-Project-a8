@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
 import { useParams } from "react-router-dom";
 import useHookData from "../Hook/useHookData";
+import { saveToLocalStorage } from "../SaveToLocalStorage/SaveToLocalStorage";
+import { saveToLocalStorageAother } from "../SaveToLocalStorageAnother/SaveToLocalStorageAnother";
 
 const CardDetails = () => {
   const { id } = useParams();
@@ -25,6 +28,13 @@ const CardDetails = () => {
     totalPages,
     review,
   } = hero || {};
+
+  const handleBook = (store) => {
+    saveToLocalStorage(store);
+  };
+  const handleAnother = (second) => {
+    saveToLocalStorageAother(second);
+  };
   return (
     <div>
       <div className="lg:mx-16 md:mx-4 font-work mt-10 ">
@@ -44,10 +54,13 @@ const CardDetails = () => {
                   <p className="font-bold">Review : </p>
                   <p className="opacity-70 text-sm">{review}</p>
                 </p>
-                <p className="mt-10">
+                <div className="mt-10 ">
                   <p className="font-bold text-black">Tag:</p>
-                  <p className="text-[#23BE0A] font-bold"> {tags} </p>
-                </p>
+                  <div className="flex gap-5">
+                    {/* <p className="text-[#23BE0A] font-bold"> {tags[1]} </p>
+                    <p className="text-[#23BE0A] font-bold"> {tags[0]} </p> */}
+                  </div>
+                </div>
                 <div className="divider"></div>
                 <div className="space-y-4">
                   <div className="flex items-center gap-16">
@@ -69,10 +82,16 @@ const CardDetails = () => {
                 </div>
 
                 <div className="flex gap-5 mt-8">
-                  <button className="btn   border-black font-bold text-lg">
+                  <button
+                    onClick={() => handleBook(hero)}
+                    className="btn   border-black font-bold text-lg"
+                  >
                     Read
                   </button>
-                  <button className="btn btn-info text-white text-lg font-bold">
+                  <button
+                    onClick={() => handleAnother(hero)}
+                    className="btn btn-info text-white text-lg font-bold"
+                  >
                     Wishlist
                   </button>
                 </div>
@@ -81,6 +100,7 @@ const CardDetails = () => {
           </div>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };
