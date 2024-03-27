@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "../../CardStyle.css";
 
 const BookStore = ({ hero }) => {
   const { bookId, image, bookName, author, rating } = hero;
@@ -7,8 +8,12 @@ const BookStore = ({ hero }) => {
       <NavLink to={`/cardDetails/${bookId}`}>
         <div className=" font-work">
           <div className="card card-compact   bg-base-100 shadow-xl border-2">
-            <figure className="w-80 h-52 bg-gray-200 mx-auto rounded-2xl my-7">
-              <img src={image} alt="Shoes" />
+            <figure className="w-auto h-auto  mx-auto rounded-2xl p-3 ">
+              <img
+                src={image}
+                className="rounded-2xl card:hover "
+                alt="Books"
+              />
             </figure>
 
             <div className="card-body">

@@ -3,6 +3,7 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CardDetails from "./Components/CardDetails/CardDetails";
+import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import Books from "./Components/Paiges/Books";
 import Home from "./Components/Paiges/Home";
 import Read from "./Components/Paiges/Read";
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <RootFile />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

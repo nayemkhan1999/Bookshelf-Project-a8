@@ -38,14 +38,14 @@ const CardDetails = () => {
   return (
     <div>
       <div className="lg:mx-16 md:mx-4 font-work mt-10 ">
-        <div className="hero min-h-screen bg-base-200 rounded-2xl">
-          <div className="hero-content flex-col  lg:flex-row mx-10 ">
+        <div className="hero min-h-screen bg-base-200 border-2 rounded-2xl">
+          <div className="hero-content flex-col  lg:flex-row  ">
             <div className="flex-1">
-              <img src={image} className=" w-80 " />
+              <img src={image} className=" h-[80vh] rounded-2xl " />
             </div>
             <div className="flex-1">
               <div>
-                <h1 className="text-5xl font-bold">{bookName}</h1>
+                <h1 className="text-4xl font-bold">{bookName}</h1>
                 <p className="text-xl font-medium">By :{author}</p>
                 <div className="divider"></div>
                 <p className="text-xl font-medium">{category}</p>
@@ -55,10 +55,10 @@ const CardDetails = () => {
                   <p className="opacity-70 text-sm">{review}</p>
                 </p>
                 <div className="mt-10 ">
-                  <p className="font-bold text-black">Tag:</p>
                   <div className="flex gap-5">
-                    {/* <p className="text-[#23BE0A] font-bold"> {tags[1]} </p>
-                    <p className="text-[#23BE0A] font-bold"> {tags[0]} </p> */}
+                    <p className="font-semibold text-black">Tag:</p>
+                    <p className="text-[#23BE0A] font-bold"> #Young Adult </p>
+                    <p className="text-[#23BE0A] font-bold"> #Identity </p>
                   </div>
                 </div>
                 <div className="divider"></div>

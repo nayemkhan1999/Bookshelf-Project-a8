@@ -12,8 +12,8 @@ const AnotherReadBook = ({ ReadDog }) => {
   return (
     <div>
       <div className="hero min- bg-base-50 border-2 mt-8 rounded-xl">
-        <div className="hero-content flex-col lg:flex-row items-center gap-40">
-          <img src={image} className=" w-64 h-80 bg-gray-100 rounded-xl p-8" />
+        <div className="hero-content flex-col lg:flex-row items-center justify-between gap-30">
+          <img src={image} className=" w-auto h-96  rounded-2xl " />
           <div>
             <h1 className="text-3xl font-bold">{bookName}</h1>
             <p className="mt-4 font-medium">By : {author}</p>
