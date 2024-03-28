@@ -6,7 +6,7 @@ const useHookData = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("/public/fake-data.json")
+    fetch("./fake-data.json")
       .then((res) => res.json())
       .then((data) => setCard(data));
     setLoading(false);
