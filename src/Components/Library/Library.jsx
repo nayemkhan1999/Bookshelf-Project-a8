@@ -14,15 +14,18 @@ const Library = () => {
         >
           <div className="hero-content flex-col lg:flex-row-reverse gap-20">
             <div className="">
-              <h1 className="lg:text-6xl text-3xl font-bold mb-8"></h1>
-              <p className="text-gray-500 font-medium text-xl text-center">
+              <h1 className="lg:text-6xl text-3xl font-bold mb-8 text-center opacity-70 text-cyan-400">
+                A JOURNEY THROUGH
+                <br /> ANCIENT WISDOM, MEDITATION, <br /> AND GLOBAL IMPACT
+              </h1>
+              <p className="text-black opacity-50  text-xl text-center">
                 Jump-start baby’s exposure to first words using this beautifully
-                designed board book box set—the perfect gift for newborns and
-                baby showers!
+                designed <br /> board book box set—the perfect gift for newborns
+                and baby showers!
               </p>
 
-              <button className="btn btn-active text-white font-semibold bg-[#23BE0A]">
-                View The List
+              <button className="btn btn-active text-white font-semibold bg-cyan-400 border-none float-end mt-4 ">
+                Show The Library
               </button>
             </div>
           </div>
