@@ -2,6 +2,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import BuyBook from "./Components/BuyBook/BuyBook";
 import CardDetails from "./Components/CardDetails/CardDetails";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import Library from "./Components/Library/Library";
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/library",
         element: <Library />,
+      },
+      {
+        path: "/buy",
+        element: <BuyBook />,
       },
     ],
   },
