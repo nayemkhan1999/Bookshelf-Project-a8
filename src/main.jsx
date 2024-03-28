@@ -4,6 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CardDetails from "./Components/CardDetails/CardDetails";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
+import Library from "./Components/Library/Library";
 import Books from "./Components/Paiges/Books";
 import Home from "./Components/Paiges/Home";
 import Read from "./Components/Paiges/Read";
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/cardDetails/:id",
         element: <CardDetails />,
+      },
+      {
+        path: "/library",
+        element: <Library />,
       },
     ],
   },
