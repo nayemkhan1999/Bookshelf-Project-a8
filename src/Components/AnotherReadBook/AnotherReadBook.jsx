@@ -1,6 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 const AnotherReadBook = ({ ReadDog }) => {
   const {
     bookName,
+    bookId,
     author,
     image,
     yearOfPublishing,
@@ -86,15 +89,18 @@ const AnotherReadBook = ({ ReadDog }) => {
             </div>
             <div className="divider"></div>
             <div className="flex gap-8">
-              <button className="btn rounded-full text-[#328EFF]">
+              <button className="btn rounded-full font-semibold text-sm text-[#328EFF]">
                 category: {category}
               </button>
-              <button className="btn rounded-full text-[#FFAC33]">
-                Rating{rating}
+              <button className="btn rounded-full font-semibold text-sm text-[#FFAC33]">
+                Rating: {rating}
               </button>
-              <button className="btn bg-[#23BE0A] rounded-full text-white">
+              <NavLink
+                to={`/cardDetails/${bookId}`}
+                className="btn bg-[#23BE0A] rounded-full text-white"
+              >
                 View Details
-              </button>
+              </NavLink>
             </div>
           </div>
         </div>

@@ -23,7 +23,7 @@
     "category": "Vintage",
     "tags": ["Young Adult", "Identity"],
     "publisher": "J.R.R. Tolkien",
-    "yearOfPublishing": 1960
+    "yearOfPublishing": 1850
   },
   {
     "bookId": 3,
@@ -36,7 +36,7 @@
     "category": "Retro",
     "tags": ["Young Adult", "Identity"],
     "publisher": " J.D. Salinger",
-    "yearOfPublishing": 1960
+    "yearOfPublishing": 1724
   },
   {
     "bookId": 4,
@@ -49,7 +49,7 @@
     "category": "Traditional",
     "tags": ["Young Adult", "Identity"],
     "publisher": "Harper Lee",
-    "yearOfPublishing": 1960
+    "yearOfPublishing": 2000
   },
   {
     "bookId": 5,
@@ -62,7 +62,7 @@
     "category": "Timeless",
     "tags": ["Young Adult", "Identity"],
     "publisher": "Paulo Coelho",
-    "yearOfPublishing": 1960
+    "yearOfPublishing": 1618
   },
   {
     "bookId": 6,
@@ -75,7 +75,7 @@
     "category": "Antique",
     "tags": ["Young Adult", "Identity"],
     "publisher": "Paulo Coelho",
-    "yearOfPublishing": 1960
+    "yearOfPublishing": 2010
   },
   {
     "bookId": 7,
@@ -88,7 +88,7 @@
     "category": "Historic",
     "tags": ["Young Adult", "Identity"],
     "publisher": "George Orwell",
-    "yearOfPublishing": 1960
+    "yearOfPublishing": 2020
   },
   {
     "bookId": 8,
@@ -101,7 +101,7 @@
     "category": "Nostalgic",
     "tags": ["Young Adult", "Identity"],
     "publisher": " Jane Austen",
-    "yearOfPublishing": 1960
+    "yearOfPublishing": 1819
   },
   {
     "bookId": 9,
@@ -114,6 +114,6 @@
     "category": "Iconic",
     "tags": ["Young Adult", "Identity"],
     "publisher": "Stieg Larsson",
-    "yearOfPublishing": 1960
+    "yearOfPublishing": 1999
   }
 ]

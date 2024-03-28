@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "../../CardStyle.css";
 
 const BookStore = ({ hero }) => {
-  const { bookId, image, bookName, author, rating } = hero;
+  const { bookId, image, bookName, author, rating, category } = hero;
   return (
     <div>
       <NavLink to={`/cardDetails/${bookId}`}>
@@ -24,7 +24,7 @@ const BookStore = ({ hero }) => {
               <h2 className="card-title text-2xl font-bold">{bookName}</h2>
               <p className="text-base font-medium">By : {author}</p>
               <div className="flex justify-between mr-10 text-base font-medium">
-                <div>Fiction</div>
+                <div>{category}</div>
                 <div className="flex items-center gap-1">
                   <div>{rating}</div>
                   <div>

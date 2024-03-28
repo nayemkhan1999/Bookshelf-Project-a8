@@ -1,15 +1,6 @@
-import { useEffect, useState } from "react";
-import { getBookData } from "../SaveToLocalStorage/SaveToLocalStorage";
 import WishCard from "../WishCard/WishCard";
 
-const WhishlistBook = () => {
-  const [showdata, setShowData] = useState([]);
-
-  useEffect(() => {
-    setShowData(getBookData());
-  }, []);
-  console.log(showdata);
-
+const WhishlistBook = ({ showdata }) => {
   return (
     <div>
       {showdata.map((dataHero) => (

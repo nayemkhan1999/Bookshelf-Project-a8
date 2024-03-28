@@ -1,7 +1,10 @@
+import { NavLink } from "react-router-dom";
+
 const WishCard = ({ dataHero }) => {
   const {
     bookName,
     author,
+    bookId,
     image,
     yearOfPublishing,
     publisher,
@@ -86,15 +89,18 @@ const WishCard = ({ dataHero }) => {
             </div>
             <div className="divider"></div>
             <div className="flex gap-8">
-              <button className="btn rounded-full text-[#328EFF]">
+              <button className="btn rounded-full font-semibold text-sm text-[#328EFF]">
                 category: {category}
               </button>
-              <button className="btn rounded-full text-[#FFAC33]">
-                Rating{rating}
+              <button className="btn rounded-full font-semibold text-sm text-[#FFAC33]">
+                Rating: {rating}
               </button>
-              <button className="btn bg-[#23BE0A] rounded-full text-white">
+              <NavLink
+                to={`/cardDetails/${bookId}`}
+                className="btn bg-[#23BE0A] rounded-full text-white"
+              >
                 View Details
-              </button>
+              </NavLink>
             </div>
           </div>
         </div>

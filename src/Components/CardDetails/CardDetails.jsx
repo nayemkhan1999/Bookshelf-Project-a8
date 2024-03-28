@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
-import { Toaster } from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import { useParams } from "react-router-dom";
 import useHookData from "../Hook/useHookData";
 import { saveToLocalStorage } from "../SaveToLocalStorage/SaveToLocalStorage";
-import { saveToLocalStorageAother } from "../SaveToLocalStorageAnother/SaveToLocalStorageAnother";
+import {
+  getAnotherData,
+  saveToLocalStorageAother,
+} from "../SaveToLocalStorageAnother/SaveToLocalStorageAnother";
 
 const CardDetails = () => {
   const { id } = useParams();
@@ -21,7 +24,6 @@ const CardDetails = () => {
     image,
     author,
     category,
-    tags,
     publisher,
     yearOfPublishing,
     rating,
@@ -32,8 +34,15 @@ const CardDetails = () => {
   const handleBook = (store) => {
     saveToLocalStorage(store);
   };
+
   const handleAnother = (second) => {
-    saveToLocalStorageAother(second);
+    const wishData = getAnotherData();
+    const isExist = wishData.find((book) => book.id === wishData.id);
+    if (!isExist) {
+      saveToLocalStorageAother(second);
+    } else {
+      toast.error("All Ready Added");
+    }
   };
   return (
     <div>

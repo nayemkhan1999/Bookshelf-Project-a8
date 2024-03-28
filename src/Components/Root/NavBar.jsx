@@ -15,7 +15,7 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className="lg:mx-16 md:mx-4 font-work">
+    <div className="lg:mx-16 md:mx-2 font-work">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -42,7 +42,7 @@ const NavBar = () => {
               {Links}
             </ul>
           </div>
-          <h1 className="text-3xl font-bold">Book Vibe</h1>
+          <h1 className="lg:text-3xl  font-bold">Book Club</h1>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-2 text-lg font-medium  ">
@@ -50,7 +50,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-4">
-          <a className="btn bg-[#23BE0A] text-white font-semibold text-lg">
+          <a className="lg:flex hidden btn bg-[#23BE0A] text-white font-semibold text-lg">
             Sign In
           </a>
           <a className="btn bg-[#59C6D2] text-white font-semibold text-lg">
