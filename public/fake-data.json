@@ -88,7 +88,7 @@
     "category": "Historic",
     "tags": ["Young Adult", "Identity"],
     "publisher": "George Orwell",
-    "yearOfPublishing": 2020
+    "yearOfPublishing": 1220
   },
   {
     "bookId": 8,
@@ -101,7 +101,7 @@
     "category": "Nostalgic",
     "tags": ["Young Adult", "Identity"],
     "publisher": " Jane Austen",
-    "yearOfPublishing": 1819
+    "yearOfPublishing": 1960
   },
   {
     "bookId": 9,
@@ -114,6 +114,6 @@
     "category": "Iconic",
     "tags": ["Young Adult", "Identity"],
     "publisher": "Stieg Larsson",
-    "yearOfPublishing": 1999
+    "yearOfPublishing": 1960
   }
 ]

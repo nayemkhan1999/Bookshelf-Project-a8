@@ -42,7 +42,7 @@ const NavBar = () => {
               {Links}
             </ul>
           </div>
-          <h1 className="lg:text-3xl  font-bold">Book Club</h1>
+          <h1 className="lg:text-4xl  font-black text-[#82cc76]">Book Club</h1>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-2 text-lg font-medium  ">
